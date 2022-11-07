@@ -1,0 +1,687 @@
+ @font-face {
+   font-family: ailerons;
+   src: url(Ailerons-Regular.otf);
+}
+@font-face {
+   font-family: kontan;
+   src: url(Kontanter-Bold.otf);
+}
+/*-----------------------------------------------------------------
+global styles */
+*{
+   box-sizing:border-box; 
+   margin:0px;
+   padding:0px;
+}
+/*------------------------------------------------------------------
+global styles */
+body 
+{
+   background-image: url(images/Beach.jpg);
+   background-size: cover;
+    background-position: center;
+    background-attachment: fixed;    
+}
+
+/*-----------------------------------------------------------------
+Wrapper section*/
+.wrapper
+{
+   border: 10px solid rgba(3, 226, 255, 0.37);
+   max-width: 1280px;
+   margin: auto; 
+}
+
+/*-------------------------------------------------------------------
+ Navigation section*/
+.navigation 
+{
+   background-color: rgba(27, 90, 158, 0.363);
+  
+   display: flex;
+   flex-direction: row; 
+   justify-content: center;
+}
+.navigation a
+{
+display: block;
+ color: white;
+ text-decoration:none;
+ font-family:Helvetica;
+ font-size:20px;
+ padding:15px;
+ background-color: rgba(62, 132, 173, 0);
+ transition: 2s;
+}
+.navigation a:hover
+{
+   background-color: rgb(250, 247, 247);
+   padding: 20px;
+}
+.hamburger
+{
+   display: none !important;
+}
+
+/*-------------------------------------------------------------------
+ Hero section*/
+.hero 
+{
+   /*boxing adjustments*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   height: 700px;
+   background-image: url(images/img_5796-1-1.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+
+   padding: 20px;
+  
+   /*text-align: center;*/
+}
+.hero img
+{
+ width: 150px;
+ filter:drop-shadow(10px 10px 10px whitesmoke);
+ transition: 5s;
+ position: absolute;
+ 
+}
+.hero:hover img
+{
+   width: 200px;
+   transform: rotate(270deg);
+   opacity: 10%;
+}
+.herohiddentext
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.herohiddentext a
+{
+   opacity: 15%;
+   transition: 5s;
+   color: white;
+}
+.herohiddentext a:hover
+{
+   color: white;
+   font-family: "kontan";
+   font-size: 3vw;
+   text-decoration: none;
+   padding: 10px;
+   background-color: rgba(14, 159, 243, 0.678);
+   border: 2px solid rgba(245, 245, 245, 0.89);
+   box-shadow:  5px 5px 10px grey; 
+   opacity: 100%;
+}
+.hero h1 
+{
+   text-align: center;
+   color: rgba(245, 245, 245, 0.918);
+   font-family: "kontan";
+   font-size: 4vw;
+   word-spacing: 30px;
+   text-shadow: 2px 2px 5px black;
+   padding-bottom: 60px;
+}
+.hero h2 
+{
+   text-align: left;
+   color: rgb(224, 220, 213);
+   margin: 10px;
+   padding-top: 40px;
+   font-family: impact;
+   font-size: 2vw;
+   word-spacing: 5px;
+   text-shadow: 2px 2px 5px black;
+   
+}
+.hero p
+{
+   text-align: left;
+   color: rgb(245, 245, 245);
+   margin-bottom: 10px;
+   font-family: impact;
+   font-size: 3vw;
+   word-spacing: 2px;  
+}
+.hero a
+{
+   color: white;
+   font-family: 'kontan';
+   font-size: 2vw;
+   text-decoration: none;
+   padding: 10px;
+   background-color: rgba(243, 98, 14, 0.678);
+   border: 2px solid rgba(245, 245, 245, 0.89);
+   box-shadow:  5px 5px 10px grey; 
+}
+.hero a:hover
+{
+   background-color: brown;
+}
+/*----------------------------------------------------------------------
+ Video section*/
+ .video iframe
+ {
+   width: 100%;
+   height: 30vw;
+ }
+
+/*----------------------------------------------------------------------
+ Lineup section*/
+ .lineup 
+ {
+    border: 1px solid black;
+    padding: 60px;
+    background-image:url(images/Sound-Tulum.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+   justify-content: center;
+    
+ }
+ .lineup a
+ {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 3vw; 
+    color: tomato;
+    background-color: rgba(245, 245, 245, 0.514);
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+    transition: 3s;
+ }
+ .lineup a:hover
+ {
+    color: rgba(4, 255, 255, 0.774);
+    transform: scale(1.05);
+    background-image: linear-gradient(rgba(250, 116, 6, 0.61), rgba(218, 138, 101, 0.315));
+    
+ }
+
+/*----------------------------------------------------------------------
+ content section*/
+.content 
+{   
+   background-color: rgba(67, 164, 177, 0.911);
+   padding: 30px;
+   box-shadow: 2px 2px 1px lightgrey;
+}
+.content h2
+{
+  font-family:Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  text-align: left;
+  padding:  5px; 
+}
+.content h1
+{
+   font-family: "ailerons";
+   color: white;
+   text-align: center;
+   font-size: 3vw;
+   padding:  5px;
+}
+.content p 
+{
+   text-align: left;
+   color: whitesmoke;
+   font-family: 'Playfair';
+   font-size: 2vw;
+}
+/*----------------------------------------------------------------------
+ Info section*/
+.info
+{
+   background-color: rgba(0, 0, 0, 0.897);
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; 
+}
+.infobox 
+{
+   border: 1px solid rgb(240, 233, 233);
+   width: 50%;
+   display: flex;
+   flex-direction: column; 
+   position: relative;  
+}
+.infoboximgtext
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.infobox img
+{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: 3s;
+   opacity:80%;
+   position: absolute;
+}
+.info h2
+{
+   text-align: center;
+   color: rgb(247, 247, 247);
+   margin: 10px;
+   font-family: "ailerons";
+   font-size: 4vw;
+   word-spacing: 5px;
+   padding: 10px;
+   text-shadow: 2px 2px 5px black;
+}
+.infobox h3
+{ 
+   font-family: Arial, Helvetica, sans-serif ;
+   padding: 10px;
+   color: white;
+   text-align: center;
+}
+.infobox h6
+{
+   font-family: "ailerons";
+   font-size: 2vw;
+   color: white;
+}
+.infobox h4
+{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 2vw;
+   color: white;
+}
+.infobox p
+{
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-size: 2vw;
+   padding: 20px;
+   text-align: left;
+}
+.infobox a
+{
+   font-size: 20px;
+   padding: 1vw;
+   color: rgb(52, 227, 250);
+   text-align: center;
+   text-decoration:  none;
+}
+.infobox img:hover
+{
+   width: 100%;
+   height: 30%;
+   font-size: x-large;
+}
+.infobox a:hover
+{
+   color: rgb(21, 135, 155);
+   text-decoration:underline;
+}
+
+/*----------------------------------------------------------------------
+ Footer section*/
+ .footer
+ {
+    background-color:rgba(0, 0, 0, 0.877); ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .footer p
+ {
+    color: whitesmoke;
+    padding: 10px;
+ }
+
+ /*----------------------------------------------------------------------
+ Newsletter section*/
+ .Newsletter
+ {
+    width: 25%;
+   background-color: rgba(0, 0, 0, 0.178); 
+ }
+
+ .newsletter h2 
+ {
+   font-family: "Playfair";
+   font-size: 1.5vw;
+   color: whitesmoke;
+   
+   text-align: center;
+   font-weight: normal;
+}
+.newsletter p
+{
+   color: rgb(250, 244, 244);
+   font-family: "Playfair";
+   text-align: center;
+   font-size: 1vw;
+}
+.inputemail 
+{
+   font-family: "Arial", sans-serif;
+   font-size: 1vw;
+   padding: 10px;
+   background-color: #e0e0e0;
+   border: 1px solid grey;
+   border-radius: 5px;
+   margin-top: 10px;
+   width: 60%;
+}
+.inputemail:focus 
+{
+   background-color: rgb(248, 245, 245);
+   outline: none;
+   border: 1px solid rgb(6, 229, 245);
+}
+.inputemail::placeholder 
+{
+   font-style: italic;
+}
+.sendemail 
+{
+   font-family: "Arial";
+   padding: 10px;
+   background-image: linear-gradient(rgb(130, 226, 226), rgb(33, 154, 211));
+   border: 1px solid grey;
+   border-radius: 5px;
+   width: 30%;
+   transition: 1s;
+}
+.sendemail:hover 
+{
+   color: white;
+   background-image: linear-gradient(rgb(250, 116, 6), rgb(218, 138, 101));
+}
+ .footerlinks
+ { 
+    width: 25%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.137);   
+ }
+ .footerlinks a 
+ {
+   display: block;
+   padding: 10px;
+   font-family: "Noto Serif";
+   font-size: 1.1vw;
+   color: white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+.footerlinks a:hover 
+{
+   color: #ef8e0f;
+}
+ .social
+ {
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.137);
+ }
+ .social img
+ {
+    filter: grayscale(100%) drop-shadow( 0px 0px 0px black);
+    padding: 5px;
+    transition:  0.5s;
+ }
+ .social img:hover
+{
+   filter: grayscale(30%) drop-shadow(5px 5px 4px black) saturate(1);
+   transform: scale(1.2) rotate(40deg);
+}
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+ARTIST.HTML
+--------------------------------------------------------------------------------------*/
+
+.artisthero
+{
+height: 400px;
+background-image: url(images/Tulum-1.jpg);
+}
+.artisthero h2
+{
+   padding-top: 50px;
+}
+.artistcontent
+{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   background-color: rgba(255, 255, 255, 0.315);
+}
+.artistinfo
+{
+   width: 33.33%;
+   background-color: rgba(0, 77, 149, 0.342);
+   border-radius: 20px;
+   padding: 20px;
+   margin-bottom: 10px; 
+   text-align: center;
+}
+.bluebg
+{
+   background-color: rgba(9, 106, 241, 0.523);
+}
+.bluebg img
+{
+  filter: none;
+}
+
+.artistinfo img
+{
+   width: 70%;
+   border: 10px solid white;
+   border-radius: 60%;
+   filter: grayscale();
+   transition: 1s;
+}
+.artistinfo:hover
+{
+   transform: scale(1.05);
+}
+.artistinfo:hover img
+{
+   filter: grayscale(30%);
+   transform: scale(1.1) rotate(10deg);
+   box-shadow: 5px 5px 20px grey;
+}
+
+.artistdetails h2
+{
+ font-family: "ailerons";
+ color: whitesmoke;
+ font-size: 3vw;
+ padding: 5px;
+}
+.artistdetails p
+{
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-size: 1.1vw;
+}
+
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+Mobile.css
+--------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1280px)
+{
+   body
+   {
+     border:3px solid #e0e0e0 ;
+   }
+   .navigation{
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 50px;
+      overflow: hidden;
+      transition: 2s;
+   }
+   .navigation a
+   {
+      text-align: center;
+   }
+   .hamburger{
+      display: block !important;
+      font-size: 4vw !important;
+      text-align: left!important;
+      padding-bottom: 5px;
+   }
+   .active
+   {
+      height: 300px;
+      background-color: rgba(5, 178, 178, 0.475);
+   }
+/*----------------------------------------------------------------------------------------
+Mobile Hero
+*/
+   .hero h1
+   {
+   color: rgb(255, 255, 255);
+   font-size: 7vw;
+   }
+   .hero h2
+   {
+      font-size:  5vw;
+   }
+   .hero img
+   {
+      width: 18%;
+   }
+   .hero a
+   {
+     font-size: 3vw;
+   }
+/*----------------------------------------------------------------------------------------
+Mobile Lineup
+*/
+   .lineup
+   {
+      flex-direction: column;
+   }
+   .lineup a
+   {
+      text-align: center;
+      font-size: 5vw;
+   }
+   /*----------------------------------------------------------------------------------------
+Mobile Content
+*/
+    .content h1
+    {
+       font-size: 4vw;
+    }
+    .content h2
+    {
+       font-size: 3vw;
+    }
+   /*----------------------------------------------------------------------------------------
+Mobile info
+*/
+   .info
+   {
+      flex-direction: column;
+   }
+   .infobox
+   {
+      width: 100%;
+      height: 500px;
+   }
+   .location
+   {
+      order: -1;
+      height: 350px;
+   }
+   .infoimg 
+   { 
+      height: 600px;
+   }
+ 
+   /*----------------------------------------------------------------------------------------
+Mobile Footer
+*/
+   .footer
+   {
+   flex-direction: column;
+   align-items: center;
+   }
+
+   .newsletter
+   {
+      align-items: center;
+      width: 80%;
+   }
+   .newsletter h2
+   {
+      font-size: 6vw;
+   }
+   .newsletter p
+   {
+      font-size: 3vw;
+   }
+   .footerlinks
+   {
+      width: 80%;
+      text-align: center;
+     
+   }
+   .footerlinks a
+   {
+      font-size: 3vw;
+      
+   }
+   .social
+   {
+      width: 80%;
+      text-align: center;
+   }
+   .social img
+   {
+      width: 10%;
+   }
+
+  /*----------------------------------------------------------------------------------------
+ Mobiel Artist Content
+*/
+   .artistcontent
+   {
+      flex-direction: column;
+   }
+   .artistinfo
+   {
+      width: 100%;    
+   }
+   .artistinfo img
+   {
+     width: 40%;
+   }
+   .artistdetails h2
+   {
+      padding-top: 10px;
+     font-size: 5vw;
+   }
+   .artistdetails p
+   {
+     font-size: 3vw;
+   }
+
+}

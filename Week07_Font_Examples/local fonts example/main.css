@@ -1,0 +1,31 @@
+
+
+@font-face {
+   font-family: 'Dancing Script';
+   src: url("Dancing-Script-regular.woff"); 
+}
+
+@font-face {
+   font-family: 'Quicksand';
+   src: url("Quicksand.woff"); 
+}
+
+
+
+/* ----------------   */
+
+
+
+h1{
+    font-family: "Dancing Script";
+    color:red;
+    text-align: center;
+ }
+
+
+p{  font-family: "Quicksand";
+    color:orange;
+    text-align: center;
+}
+
+
